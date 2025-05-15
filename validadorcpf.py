@@ -11,6 +11,9 @@ while True:
         print('Digite apenas números inteiros')
     elif len(cpf_recebido) != 11:
         print('Tamanho incorreto, digite 11 dígitos')
+    elif cpf_recebido[0] * len(cpf_recebido) == cpf_recebido:
+        print('CPF Inválido')
+
     else: 
         cpf_9digitos = cpf_recebido[:9]
         for digito1 in cpf_9digitos:
